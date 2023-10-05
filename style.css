@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+:root{
+    --darkblue: #0C023E;
+    --blue: #1D2570;
+    --pink: #C6267B;
+    --purple: #934AB3;
+    --darkpurple: #7a4a98;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: var(--blue); */
+    background: rgb(21,21,32);
+background: linear-gradient(0deg, rgba(21,21,32,1) 0%, rgba(41,8,94,1) 51%);
+/* background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9,62,163,1) 55%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.musicplayer{
+    /* background-color: var(--purple); */
+    background: rgb(165,107,191);
+background: linear-gradient(0deg, rgba(165,107,191,1) 0%, rgba(171,1,156,0.7176120448179272) 35%);
+    width: 400px;
+    height: 600px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav img{
+    height: 30px;
+    color: azure;
+}
+nav img:hover{
+    cursor: pointer;
+}
+
+.song{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--darkpurple);
+    /* background: rgb(130,57,57);
+background: linear-gradient(0deg, rgba(130,57,57,1) 0%, rgba(74,128,193,0.7372198879551821) 100%); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.player{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#progressbar{
+    -webkit-appearance: none;
+    width: 350px;
+    height: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+    background-color: var(--darkblue);
+}
+#progressbar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--darkpurple);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 4px solid var(--darkblue);
+    box-shadow: 0 5px 5px rgba(69, 9, 68, 0.508);
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 400px;
+    
+}
+.controls:hover{
+    cursor: pointer;
+}

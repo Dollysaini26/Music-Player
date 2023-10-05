@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9d27c761c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <img src="https://cdn-icons-png.flaticon.com/128/7764/7764617.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/8297/8297819.png" alt="">
+            </nav>
+
+            <div class="song">
+                <h3>Soothing</h3>
+                <p>Now Playing</p>
+                <img src="Aziyat.jpeg" alt="Aziyat" width="250px" height="250px">
+                <h2>Aziyat 2.0</h2>
+                <p>Pratsofficial</p>
+            </div>
+
+            <div class="player">
+
+                <audio src="Aziyat-2.0-Pratyush-Dhiman.mp3" id="song"></audio>
+                
+                <input type="range" value="0" id="progressbar">
+                
+                <div class="controls">
+                    <div id="mix">
+                        <img  src="https://cdn-icons-png.flaticon.com/128/8191/8191664.png" alt="mix" width="25px">
+                    </div>
+
+                    <div id="back">
+                        <i class="fa-solid fa-backward"></i>
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/128/9684/9684518.png" alt="back" width="25px"> -->
+                    </div>
+
+                    <div id="playbtn" onclick="playpause()">
+                        <i class="fa-solid fa-play" id="play"></i>
+                        <!-- <img class="https://cdn-icons-png.flaticon.com/128/2731/2731191.png" src="https://cdn-icons-png.flaticon.com/128/2731/2731191.png" alt="play" width="28px" id="play"> -->
+                    </div>        
+
+                    <div id="forward">
+                        <i class="fa-solid fa-forward"></i>
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/128/7513/7513167.png" alt="forward" width="26px"> -->
+                    </div>
+
+                    <div id="shuffle">
+                        <img src="https://cdn-icons-png.flaticon.com/128/10279/10279036.png" alt="shuffle" width="25px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>
